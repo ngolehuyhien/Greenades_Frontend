@@ -6,6 +6,7 @@ body {
     text-align:center;
     padding:0;
     margin:0;
+    
 }
 
 /* header */ 
@@ -55,76 +56,65 @@ a.button.non-active {background:#4b6eb8;}
 .header span, .header a.classique {color:#0d3280}
 
 /* table */ 
-.zui-table {
+.table {
     border: none;
     border-right: solid 1px #DDEFEF;
     border-collapse: separate;
     border-spacing: 0;
     font: normal 13px Arial, sans-serif;
-    align-self: center;
 }
-.zui-table thead th {
-    background-color: #DDEFEF;
+.table thead th {
+    background-color:#0d3280;
     border: none;
-    color: #336B6B;
+    color: #fff;
     padding: 10px;
     text-align: left;
-    text-shadow: 1px 1px 1px #fff;
     white-space: nowrap;
 }
-.zui-table tbody td {
+.table tbody td {
     border-bottom: solid 1px #DDEFEF;
     color: #333;
     padding: 10px;
     text-shadow: 1px 1px 1px #fff;
     white-space: nowrap;
 }
-.zui-wrapper {
+.wrapper {
+    margin-top: 10px;
     position: relative;
-    width: max-content;
+    margin-left: 2.5%;
 }
-.zui-scroller {
-    margin-top: 20px;
+.scroller {
+    margin-left: 472px;
     overflow-x: scroll;
     overflow-y: visible;
     padding-bottom: 5px;
+    width: 65.5%;
 }
-.zui-table {
+.table .sticky-col-1 {
     border-left: solid 1px #DDEFEF;
-    border-right: solid 1px #DDEFEF;
-    align-content: stretch;
-    position: absolute;
-    table-layout:fixed;
-}
-.first-col {
-    border-left: solid 1px #DDEFEF;
-    border-right: solid 1px #DDEFEF;
-    left: 0;
+    left: 0px;
     position: absolute;
     top: auto;
-    width: 6.5%;
+    width: 100px;
 }
-.second-col {
+.sticky-col-2 {
     border-left: solid 1px #DDEFEF;
-    border-right: solid 1px #DDEFEF;
-    left: 120;
+    left: 101px;
     position: absolute;
     top: auto;
-    width: 8.5%;
+    width: 100px;
 }
-.third-col {
+.sticky-col-3 {
     border-left: solid 1px #DDEFEF;
-    border-right: solid 1px #DDEFEF;
-    left: 120;
+    left: 202px;
     position: absolute;
     top: auto;
-    width: 8.5%;
+    width: 150px;
 }
-.fourth-col {
+.sticky-col-4 {
     border-left: solid 1px #DDEFEF;
-    border-right: solid 1px #DDEFEF;
-    left: 120;
+    left: 372px;
     position: absolute;
     top: auto;
-    width: 8.5%;
+    width: 80px;
 }
