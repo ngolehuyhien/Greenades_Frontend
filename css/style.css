@@ -1,0 +1,130 @@
+html {
+    background:#fbfcfd;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align:center;
+    padding:0;
+    margin:0;
+}
+
+/* header */ 
+.header {text-align:left;width:100%;padding-right:4%;box-sizing: border-box;}
+
+.header div:nth-child(1) {
+	float:left;
+}
+.header.header-carto {padding:10px 20px 0 20px;border-bottom:2px solid #0d2380;height:90px;}
+.header div img#logo {width:200px;}
+.header div:nth-child(2) {
+	float:right;
+}
+a.classique {
+    color:#0d3280
+}
+.button-ifs:hover {color: #000;border-color: #0d3280;}
+.button-ifs.button-inverted:hover {color: #000;border-color: #fff;}
+.button-ifs:hover::before {
+	opacity: 1;
+	background-color: #fff;
+	-webkit-transform: rotate3d(0, 0, 1, 0deg);
+	transform: rotate3d(0, 0, 1, 0deg);
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.button-ifs.button-inverted:hover::before {background-color: #fff;}
+
+.button {
+	margin-top: 1em;
+	padding: 1.3em 1em;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	background:#0d3280;
+	color:#fff;
+	display:inline-block;
+}
+.button:focus {outline: none;}
+.button > span {vertical-align: middle;}
+.button-border-thick {border: 3px solid;}
+.button-text-upper {letter-spacing: 1px;text-transform: uppercase;}
+.button-size-s {font-size: 15px;font-weight:bold;}
+.header a.button {padding:0.5em 0.5em;margin-top:0;}
+a.button.non-active {background:#4b6eb8;}
+.header span, .header a.classique {color:#0d3280}
+
+/* table */ 
+.zui-table {
+    border: none;
+    border-right: solid 1px #DDEFEF;
+    border-collapse: separate;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+    align-self: center;
+}
+.zui-table thead th {
+    background-color: #DDEFEF;
+    border: none;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+    white-space: nowrap;
+}
+.zui-table tbody td {
+    border-bottom: solid 1px #DDEFEF;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+    white-space: nowrap;
+}
+.zui-wrapper {
+    position: relative;
+    width: max-content;
+}
+.zui-scroller {
+    margin-top: 20px;
+    overflow-x: scroll;
+    overflow-y: visible;
+    padding-bottom: 5px;
+}
+.zui-table {
+    border-left: solid 1px #DDEFEF;
+    border-right: solid 1px #DDEFEF;
+    align-content: stretch;
+    position: absolute;
+    table-layout:fixed;
+}
+.first-col {
+    border-left: solid 1px #DDEFEF;
+    border-right: solid 1px #DDEFEF;
+    left: 0;
+    position: absolute;
+    top: auto;
+    width: 6.5%;
+}
+.second-col {
+    border-left: solid 1px #DDEFEF;
+    border-right: solid 1px #DDEFEF;
+    left: 120;
+    position: absolute;
+    top: auto;
+    width: 8.5%;
+}
+.third-col {
+    border-left: solid 1px #DDEFEF;
+    border-right: solid 1px #DDEFEF;
+    left: 120;
+    position: absolute;
+    top: auto;
+    width: 8.5%;
+}
+.fourth-col {
+    border-left: solid 1px #DDEFEF;
+    border-right: solid 1px #DDEFEF;
+    left: 120;
+    position: absolute;
+    top: auto;
+    width: 8.5%;
+}
