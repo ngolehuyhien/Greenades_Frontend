@@ -6,7 +6,6 @@ body {
     text-align:center;
     padding:0;
     margin:0;
-    
 }
 
 /* header */ 
@@ -23,17 +22,6 @@ body {
 a.classique {
     color:#0d3280
 }
-.button-ifs:hover {color: #000;border-color: #0d3280;}
-.button-ifs.button-inverted:hover {color: #000;border-color: #fff;}
-.button-ifs:hover::before {
-	opacity: 1;
-	background-color: #fff;
-	-webkit-transform: rotate3d(0, 0, 1, 0deg);
-	transform: rotate3d(0, 0, 1, 0deg);
-	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-.button-ifs.button-inverted:hover::before {background-color: #fff;}
 
 .button {
 	margin-top: 1em;
@@ -55,6 +43,21 @@ a.classique {
 a.button.non-active {background:#4b6eb8;}
 .header span, .header a.classique {color:#0d3280}
 
+/* filters */ 
+.filters {
+    margin-top: 10px;
+    font: bold 13px Arial, sans-serif;
+}
+.category{
+    padding-left: 15px;
+    padding-right: 5px;
+}
+#submit-button{
+    margin-top: -2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 13px;
+}
 /* table */ 
 .table {
     border: none;
@@ -90,31 +93,69 @@ a.button.non-active {background:#4b6eb8;}
     padding-bottom: 5px;
     width: 65.5%;
 }
+.table .sticky-col-1 .sticky-col-2 .sticky-col-3 .sticky-col-4{
+    border-left: solid 1px #DDEFEF; 
+    top: auto;
+}
 .table .sticky-col-1 {
-    border-left: solid 1px #DDEFEF;
     left: 0px;
     position: absolute;
-    top: auto;
     width: 100px;
 }
 .sticky-col-2 {
-    border-left: solid 1px #DDEFEF;
     left: 101px;
     position: absolute;
-    top: auto;
     width: 100px;
 }
 .sticky-col-3 {
-    border-left: solid 1px #DDEFEF;
     left: 202px;
     position: absolute;
-    top: auto;
     width: 150px;
 }
 .sticky-col-4 {
-    border-left: solid 1px #DDEFEF;
     left: 372px;
     position: absolute;
-    top: auto;
     width: 80px;
+}
+/* navigator */ 
+.navigator{
+    padding-top: 10px;
+    font: bold 13px Arial, sans-serif;
+}
+.navigator > a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.navigator > a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+    height: 20px;
+}
+
+.next {
+    background-color: #0d3280;
+    color: white;
+    height: 20px;
+}
+
+.share {
+    height: 20px;
+    background-color: #0d3280;
+}
+.share > img{
+    height: 12px;
+}
+.download {
+    height: 20px;
+    background-color: #0d3280;
+}
+.download > img{
+    height: 12px;
 }

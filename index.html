@@ -12,193 +12,303 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
+    <div class="header header-carto">
+        <div><a href="https://indice.institutnr.org"><img src="medias/logo-inr.jpg" id="logo"/></a></div>
+        <div>
+        <span>Version Beta - Juillet 2020&nbsp; | &nbsp;</span>
+        <a class="classique" href="https://isit-academy.org" target="_blank">fragilitenumerique@institutnr.org</a>
+        &nbsp; <a class="button button-wayra button-border-thick button-text-upper button-size-s" href="mailto:fragilitenumerique@institutnr.org" target="_blank">Tw</a>
+        <a class="button button-wayra button-border-thick button-text-upper button-size-s" href="https://linkedin.com/company/institutnr" target="_blank">In</a>
+        </div>
+    </div>
+    <form action="/action_page.php" class="filters">
+        <label for="regions" class="category">Region </label>
+        <select name="region" id="regions">
+            <option value="ALL">(All)</option>
+            <option value="AUVERGNE RHONE ALPES">AUVERGNE RHONE ALPES</option>
+            <option value="BOURGOGNE FRANCHE COMTE">BOURGOGNE FRANCHE COMTE</option>
+            <option value="BRETAGNE">BRETAGNE</option>
+            <option value="CENTRE VAL DE LOIRE">CENTRE VAL DE LOIRE</option>
+            <option value="CORSE">CORSE</option>
+            <option value="GRAND EST">GRAND EST</option>
+            <option value="HAUTS DE FRANCE">HAUTS DE FRANCE</option>
+            <option value="ILE DE FRANCE">ILE DE FRANCE</option>
+            <option value="LA REUNION">LA REUNION</option>
+            <option value="MARTINIQUE">MARTINIQUE</option>
+            <option value="NORMANDIE">NORMANDIE</option>
+            <option value="NOUVELLE AQUITAINE">NOUVELLE AQUITAINE</option>
+            <option value="OCCITANIE">OCCITANIE</option>
+            <option value="PAYS DE LA LOIRE">PAYS DE LA LOIRE</option>
+            <option value="PROVENCE ALPES COTE D AUR">PROVENCE ALPES COTE D AUR</option>
+        </select>
+        <label for="departements" class="category">Departement </label>
+        <select name="departement" id="departements">
+            <option value="ALL">(All)</option>
+            <option value="AUVERGNE RHONE ALPES">AUVERGNE RHONE ALPES</option>
+            <option value="BOURGOGNE FRANCHE COMTE">BOURGOGNE FRANCHE COMTE</option>
+            <option value="BRETAGNE">BRETAGNE</option>
+            <option value="CENTRE VAL DE LOIRE">CENTRE VAL DE LOIRE</option>
+            <option value="CORSE">CORSE</option>
+            <option value="GRAND EST">GRAND EST</option>
+            <option value="HAUTS DE FRANCE">HAUTS DE FRANCE</option>
+            <option value="ILE DE FRANCE">ILE DE FRANCE</option>
+            <option value="LA REUNION">LA REUNION</option>
+            <option value="MARTINIQUE">MARTINIQUE</option>
+            <option value="NORMANDIE">NORMANDIE</option>
+            <option value="NOUVELLE AQUITAINE">NOUVELLE AQUITAINE</option>
+            <option value="OCCITANIE">OCCITANIE</option>
+            <option value="PAYS DE LA LOIRE">PAYS DE LA LOIRE</option>
+            <option value="PROVENCE ALPES COTE D AUR">PROVENCE ALPES COTE D AUR</option>
+        </select>
+        <label for="communes" class="category">Commune </label>
+        <select name="commune" id="communes">
+            <option value="ALL">(All)</option>
+            <option value="AUVERGNE RHONE ALPES">AUVERGNE RHONE ALPES</option>
+            <option value="BOURGOGNE FRANCHE COMTE">BOURGOGNE FRANCHE COMTE</option>
+            <option value="BRETAGNE">BRETAGNE</option>
+            <option value="CENTRE VAL DE LOIRE">CENTRE VAL DE LOIRE</option>
+            <option value="CORSE">CORSE</option>
+            <option value="GRAND EST">GRAND EST</option>
+            <option value="HAUTS DE FRANCE">HAUTS DE FRANCE</option>
+            <option value="ILE DE FRANCE">ILE DE FRANCE</option>
+            <option value="LA REUNION">LA REUNION</option>
+            <option value="MARTINIQUE">MARTINIQUE</option>
+            <option value="NORMANDIE">NORMANDIE</option>
+            <option value="NOUVELLE AQUITAINE">NOUVELLE AQUITAINE</option>
+            <option value="OCCITANIE">OCCITANIE</option>
+            <option value="PAYS DE LA LOIRE">PAYS DE LA LOIRE</option>
+            <option value="PROVENCE ALPES COTE D AUR">PROVENCE ALPES COTE D AUR</option>
+        </select>
+        <label for="intercommunalites" class="category">Intercommunalités </label>
+        <select name="intercommunalite" id="intercommunalites">
+            <option value="ALL">(All)</option>
+            <option value="AUVERGNE RHONE ALPES">AUVERGNE RHONE ALPES</option>
+            <option value="BOURGOGNE FRANCHE COMTE">BOURGOGNE FRANCHE COMTE</option>
+            <option value="BRETAGNE">BRETAGNE</option>
+            <option value="CENTRE VAL DE LOIRE">CENTRE VAL DE LOIRE</option>
+            <option value="CORSE">CORSE</option>
+            <option value="GRAND EST">GRAND EST</option>
+            <option value="HAUTS DE FRANCE">HAUTS DE FRANCE</option>
+            <option value="ILE DE FRANCE">ILE DE FRANCE</option>
+            <option value="LA REUNION">LA REUNION</option>
+            <option value="MARTINIQUE">MARTINIQUE</option>
+            <option value="NORMANDIE">NORMANDIE</option>
+            <option value="NOUVELLE AQUITAINE">NOUVELLE AQUITAINE</option>
+            <option value="OCCITANIE">OCCITANIE</option>
+            <option value="PAYS DE LA LOIRE">PAYS DE LA LOIRE</option>
+            <option value="PROVENCE ALPES COTE D AUR">PROVENCE ALPES COTE D AUR</option>
+        </select>
+        <br><br>
+        <label for="references" class="category">Choix de Point Référence  </label>
+        <select name="reference" id="references">
+            <option value="ALL">(All)</option>
+            <option value="AUVERGNE RHONE ALPES">AUVERGNE RHONE ALPES</option>
+            <option value="BOURGOGNE FRANCHE COMTE">BOURGOGNE FRANCHE COMTE</option>
+            <option value="BRETAGNE">BRETAGNE</option>
+            <option value="CENTRE VAL DE LOIRE">CENTRE VAL DE LOIRE</option>
+            <option value="CORSE">CORSE</option>
+            <option value="GRAND EST">GRAND EST</option>
+            <option value="HAUTS DE FRANCE">HAUTS DE FRANCE</option>
+            <option value="ILE DE FRANCE">ILE DE FRANCE</option>
+            <option value="LA REUNION">LA REUNION</option>
+            <option value="MARTINIQUE">MARTINIQUE</option>
+            <option value="NORMANDIE">NORMANDIE</option>
+            <option value="NOUVELLE AQUITAINE">NOUVELLE AQUITAINE</option>
+            <option value="OCCITANIE">OCCITANIE</option>
+            <option value="PAYS DE LA LOIRE">PAYS DE LA LOIRE</option>
+            <option value="PROVENCE ALPES COTE D AUR">PROVENCE ALPES COTE D AUR</option>
+        </select>
+        <input class="button button-wayra button-border-thick button-text-upper button-size-s" type="submit" value="Submit" id="submit-button">
+    </form>
 
-<div class="header header-carto">
-    <div><a href="https://indice.institutnr.org"><img src="medias/logo-inr.jpg" id="logo"/></a></div>
-    <div>
-	<span>Version Beta - Juillet 2020&nbsp; | &nbsp;</span>
-    <a class="classique" href="https://isit-academy.org" target="_blank">fragilitenumerique@institutnr.org</a>
-    &nbsp; <a class="button button-wayra button-border-thick button-text-upper button-size-s" href="mailto:fragilitenumerique@institutnr.org" target="_blank">Tw</a>
-    <a class="button button-wayra button-border-thick button-text-upper button-size-s" href="https://linkedin.com/company/institutnr" target="_blank">In</a>
+    <div class="wrapper">
+        <div class="scroller">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="sticky-col-1">Nom Com</th>
+                        <th class="sticky-col-2">Code Iris</th>
+                        <th class="sticky-col-3">Rank of SCORE GLOBAL</th>
+                        <th class="sticky-col-4">Nom Iris</th>
+                        <th>Population</th>
+                        <th>SCORE GLOBAL</th>
+                        <th>ACCÈS AUX INTERFACES NUMERIQUES</th>
+                        <th>ACCESS A L'INFORMATION</th>
+                        <th>COMPETENCES ADMINISTATIVES</th>
+                        <th>COMPÉTENCES NUMÉRIQUES</th>
+                        <th>GLOBAL ACCES</th>
+                        <th>GLOBAL COMPETENCES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sticky-col-1">Nom Com</td>
+                        <td class="sticky-col-2">Code Iris</td>
+                        <td class="sticky-col-3">Rank of SC</td>
+                        <td class="sticky-col-4">Nom Iris</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>C</td>
+                        <td>6'11"</td>
+                        <td>08-13-1990</td>
+                        <td>$4,917,000</td>
+                        <td>Kentucky/USA</td>
+                    </tr>
+                    <tr>
+                        <td class="sticky-col-1">Nom Com</td>
+                        <td class="sticky-col-2">Code Iris</td>
+                        <td class="sticky-col-3">Rank of SC</td>
+                        <td class="sticky-col-4">Nom Iris</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>C</td>
+                        <td>6'11"</td>
+                        <td>08-13-1990</td>
+                        <td>$4,917,000</td>
+                        <td>Kentucky/USA</td>
+                    </tr>
+                    <tr>
+                        <td class="sticky-col-1">Nom Com</td>
+                        <td class="sticky-col-2">Code Iris</td>
+                        <td class="sticky-col-3">Rank of SC</td>
+                        <td class="sticky-col-4">Nom Iris</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>C</td>
+                        <td>6'11"</td>
+                        <td>08-13-1990</td>
+                        <td>$4,917,000</td>
+                        <td>Kentucky/USA</td>
+                    </tr>
+                    <tr>
+                        <td class="sticky-col-1">Nom Com</td>
+                        <td class="sticky-col-2">Code Iris</td>
+                        <td class="sticky-col-3">Rank of SC</td>
+                        <td class="sticky-col-4">Nom Iris</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>C</td>
+                        <td>6'11"</td>
+                        <td>08-13-1990</td>
+                        <td>$4,917,000</td>
+                        <td>Kentucky/USA</td>
+                    </tr>
+                    <tr>
+                        <td class="sticky-col-1">Nom Com</td>
+                        <td class="sticky-col-2">Code Iris</td>
+                        <td class="sticky-col-3">Rank of SC</td>
+                        <td class="sticky-col-4">Nom Iris</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>C</td>
+                        <td>6'11"</td>
+                        <td>08-13-1990</td>
+                        <td>$4,917,000</td>
+                        <td>Kentucky/USA</td>
+                    </tr>
+                    <tr>
+                        <td class="sticky-col-1">Nom Com</td>
+                        <td class="sticky-col-2">Code Iris</td>
+                        <td class="sticky-col-3">Rank of SC</td>
+                        <td class="sticky-col-4">Nom Iris</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>C</td>
+                        <td>6'11"</td>
+                        <td>08-13-1990</td>
+                        <td>$4,917,000</td>
+                        <td>Kentucky/USA</td>
+                    </tr>
+                    <tr>
+                        <td class="sticky-col-1">Nom Com</td>
+                        <td class="sticky-col-2">Code Iris</td>
+                        <td class="sticky-col-3">Rank of SC</td>
+                        <td class="sticky-col-4">Nom Iris</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>C</td>
+                        <td>6'11"</td>
+                        <td>08-13-1990</td>
+                        <td>$4,917,000</td>
+                        <td>Kentucky/USA</td>
+                    </tr>
+                    <tr>
+                        <td class="sticky-col-1">Nom Com</td>
+                        <td class="sticky-col-2">Code Iris</td>
+                        <td class="sticky-col-3">Rank of SC</td>
+                        <td class="sticky-col-4">Nom Iris</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>C</td>
+                        <td>6'11"</td>
+                        <td>08-13-1990</td>
+                        <td>$4,917,000</td>
+                        <td>Kentucky/USA</td>
+                    </tr>
+                    <tr>
+                        <td class="sticky-col-1">Nom Com</td>
+                        <td class="sticky-col-2">Code Iris</td>
+                        <td class="sticky-col-3">Rank of SC</td>
+                        <td class="sticky-col-4">Nom Iris</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>C</td>
+                        <td>6'11"</td>
+                        <td>08-13-1990</td>
+                        <td>$4,917,000</td>
+                        <td>Kentucky/USA</td>
+                    </tr>
+                    <tr>
+                        <td class="sticky-col-1">Nom Com</td>
+                        <td class="sticky-col-2">Code Iris</td>
+                        <td class="sticky-col-3">Rank of SC</td>
+                        <td class="sticky-col-4">Nom Iris</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>C</td>
+                        <td>6'11"</td>
+                        <td>08-13-1990</td>
+                        <td>$4,917,000</td>
+                        <td>Kentucky/USA</td>
+                    </tr>
+                    <tr>
+                        <td class="sticky-col-1">Nom Com</td>
+                        <td class="sticky-col-2">Code Iris</td>
+                        <td class="sticky-col-3">Rank of SC</td>
+                        <td class="sticky-col-4">Nom Iris</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>C</td>
+                        <td>6'11"</td>
+                        <td>08-13-1990</td>
+                        <td>$4,917,000</td>
+                        <td>Kentucky/USA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
-<div class="wrapper">
-    <div class="scroller">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th class="sticky-col-1">Nom Com</th>
-                    <th class="sticky-col-2">Code Iris</th>
-                    <th class="sticky-col-3">Rank of SCORE GLOBAL</th>
-                    <th class="sticky-col-4">Nom Iris</th>
-                    <th>Population</th>
-                    <th>SCORE GLOBAL</th>
-                    <th>ACCÈS AUX INTERFACES NUMERIQUES</th>
-                    <th>ACCESS A L'INFORMATION</th>
-                    <th>COMPETENCES ADMINISTATIVES</th>
-                    <th>COMPÉTENCES NUMÉRIQUES</th>
-                    <th>GLOBAL ACCES</th>
-                    <th>GLOBAL COMPETENCES</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="sticky-col-1">Nom Com</td>
-                    <td class="sticky-col-2">Code Iris</td>
-                    <td class="sticky-col-3">Rank of SC</td>
-                    <td class="sticky-col-4">Nom Iris</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>C</td>
-                    <td>6'11"</td>
-                    <td>08-13-1990</td>
-                    <td>$4,917,000</td>
-                    <td>Kentucky/USA</td>
-                </tr>
-                <tr>
-                    <td class="sticky-col-1">Nom Com</td>
-                    <td class="sticky-col-2">Code Iris</td>
-                    <td class="sticky-col-3">Rank of SC</td>
-                    <td class="sticky-col-4">Nom Iris</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>C</td>
-                    <td>6'11"</td>
-                    <td>08-13-1990</td>
-                    <td>$4,917,000</td>
-                    <td>Kentucky/USA</td>
-                </tr>
-                <tr>
-                    <td class="sticky-col-1">Nom Com</td>
-                    <td class="sticky-col-2">Code Iris</td>
-                    <td class="sticky-col-3">Rank of SC</td>
-                    <td class="sticky-col-4">Nom Iris</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>C</td>
-                    <td>6'11"</td>
-                    <td>08-13-1990</td>
-                    <td>$4,917,000</td>
-                    <td>Kentucky/USA</td>
-                </tr>
-                <tr>
-                    <td class="sticky-col-1">Nom Com</td>
-                    <td class="sticky-col-2">Code Iris</td>
-                    <td class="sticky-col-3">Rank of SC</td>
-                    <td class="sticky-col-4">Nom Iris</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>C</td>
-                    <td>6'11"</td>
-                    <td>08-13-1990</td>
-                    <td>$4,917,000</td>
-                    <td>Kentucky/USA</td>
-                </tr>
-                <tr>
-                    <td class="sticky-col-1">Nom Com</td>
-                    <td class="sticky-col-2">Code Iris</td>
-                    <td class="sticky-col-3">Rank of SC</td>
-                    <td class="sticky-col-4">Nom Iris</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>C</td>
-                    <td>6'11"</td>
-                    <td>08-13-1990</td>
-                    <td>$4,917,000</td>
-                    <td>Kentucky/USA</td>
-                </tr>
-                <tr>
-                    <td class="sticky-col-1">Nom Com</td>
-                    <td class="sticky-col-2">Code Iris</td>
-                    <td class="sticky-col-3">Rank of SC</td>
-                    <td class="sticky-col-4">Nom Iris</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>C</td>
-                    <td>6'11"</td>
-                    <td>08-13-1990</td>
-                    <td>$4,917,000</td>
-                    <td>Kentucky/USA</td>
-                </tr>
-                <tr>
-                    <td class="sticky-col-1">Nom Com</td>
-                    <td class="sticky-col-2">Code Iris</td>
-                    <td class="sticky-col-3">Rank of SC</td>
-                    <td class="sticky-col-4">Nom Iris</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>C</td>
-                    <td>6'11"</td>
-                    <td>08-13-1990</td>
-                    <td>$4,917,000</td>
-                    <td>Kentucky/USA</td>
-                </tr>
-                <tr>
-                    <td class="sticky-col-1">Nom Com</td>
-                    <td class="sticky-col-2">Code Iris</td>
-                    <td class="sticky-col-3">Rank of SC</td>
-                    <td class="sticky-col-4">Nom Iris</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>C</td>
-                    <td>6'11"</td>
-                    <td>08-13-1990</td>
-                    <td>$4,917,000</td>
-                    <td>Kentucky/USA</td>
-                </tr>
-                <tr>
-                    <td class="sticky-col-1">Nom Com</td>
-                    <td class="sticky-col-2">Code Iris</td>
-                    <td class="sticky-col-3">Rank of SC</td>
-                    <td class="sticky-col-4">Nom Iris</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>C</td>
-                    <td>6'11"</td>
-                    <td>08-13-1990</td>
-                    <td>$4,917,000</td>
-                    <td>Kentucky/USA</td>
-                </tr>
-                <tr>
-                    <td class="sticky-col-1">Nom Com</td>
-                    <td class="sticky-col-2">Code Iris</td>
-                    <td class="sticky-col-3">Rank of SC</td>
-                    <td class="sticky-col-4">Nom Iris</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>C</td>
-                    <td>6'11"</td>
-                    <td>08-13-1990</td>
-                    <td>$4,917,000</td>
-                    <td>Kentucky/USA</td>
-                </tr>
-                <tr>
-                    <td class="sticky-col-1">Nom Com</td>
-                    <td class="sticky-col-2">Code Iris</td>
-                    <td class="sticky-col-3">Rank of SC</td>
-                    <td class="sticky-col-4">Nom Iris</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>C</td>
-                    <td>6'11"</td>
-                    <td>08-13-1990</td>
-                    <td>$4,917,000</td>
-                    <td>Kentucky/USA</td>
-                </tr>
-            </tbody>
-        </table>
+
+    <div class="navigator">
+        <a href="#" class="previous">&laquo; Previous</a>
+        <a href="#" class="next">Next &raquo;</a>
+        <a href="#" class="share">
+            <img src="medias/share.png" alt="share" />
+        </a>
+        <a href="#" class="download">
+            <img src="medias/download.png" alt="download" />
+        </a>
     </div>
-</div>
 </body>
 </html>
