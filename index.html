@@ -15,9 +15,9 @@
     <div class="header header-carto">
         <div><a href="https://indice.institutnr.org"><img src="medias/logo-inr.jpg" id="logo"/></a></div>
         <div>
-        <span>Version Beta - Juillet 2020&nbsp; | &nbsp;</span>
-        <a class="classique" href="https://isit-academy.org" target="_blank">fragilitenumerique@institutnr.org</a>
-        &nbsp; <a class="button button-wayra button-border-thick button-text-upper button-size-s" href="mailto:fragilitenumerique@institutnr.org" target="_blank">Tw</a>
+        <span>Version Beta 2 - Novembre 2020&nbsp; | &nbsp;</span>
+        <a class="classique" href="mailto:fragilitenumerique@institutnr.org" target="_blank">fragilitenumerique@institutnr.org</a>
+        &nbsp; <a class="button button-wayra button-border-thick button-text-upper button-size-s" href="https://twitter.com/institutnr" target="_blank">Tw</a>
         <a class="button button-wayra button-border-thick button-text-upper button-size-s" href="https://linkedin.com/company/institutnr" target="_blank">In</a>
         </div>
     </div>
@@ -141,7 +141,7 @@
             <option value="PAYS DE LA LOIRE">PAYS DE LA LOIRE</option>
             <option value="PROVENCE ALPES COTE D AUR">PROVENCE ALPES COTE D AUR</option>
         </select>
-        <input class="button button-wayra button-border-thick button-text-upper button-size-s" type="submit" value="Submit" id="submit-button">
+        <input class="button button-wayra button-border-thick button-text-upper button-size-s" type="submit" value="Soumettre" id="submit-button">
     </form>
 
     <div class="wrapper">
@@ -324,35 +324,50 @@
     </div>
 
     <div class="navigator">
-        <a href="#" class="previous">&laquo; Previous</a>
-        <a href="#" class="next">Next &raquo;</a>
-        <a href="#" class="share">
+        <button onclick="" class="previous">&laquo; Précédent</button>
+        <button onclick="" class="next">Suivant &raquo;</button>
+        <button type="button" onclick="openShare()" class="share">
             <img src="medias/share.png" alt="share" />
-        </a>
-        <a href="#" class="download">
+        </button>
+        <button onclick="" class="download">
             <img src="medias/download.png" alt="download" />
-        </a>
+        </button>
+    </div>
+
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Share</h1>
+
+            <label><b>Link</b></label>
+            <input type="text" value="https://indice.institutnr.org/cartographie-indicateurs-fragilite.html">
+            <br><br>
+            <a class="next" href="mailto:fragilitenumerique@institutnr.org?subject=Look at this website&body=Hi, I found this website and thought you might like it https://indice.institutnr.org/cartographie-indicateurs-fragilite.html" title="Email" target="_blank">Email</a>
+            <a class="next" href="https://twitter.com/share?url=https://indice.institutnr.org/cartographie-indicateurs-fragilite.html&amp;text=Share popup on &amp;hashtags=codepen" title="Twitter" target="_blank">Twitter</a>
+            <a class="next" href="https://www.facebook.com/sharer.php?u=https://indice.institutnr.org/cartographie-indicateurs-fragilite.html" title="Facebook" target="_blank">Facebook</a>
+            <br><br>
+            <button type="button" onclick="closeShare()">Close</button>
+        </form>
     </div>
 
     <div class="conteneur" id="indicator">
-        <h2>The Four Indicators of Fragility</h2>
-        <p>The four indicators selected make it possible to create a global analysis based on access on the one hand (information, digital interfaces) and on skills on the other (use of an interface, administrative skills).</p>
+        <h2>Les Quatre Indicateurs De Fragilité</h2>
+        <p>Les quatre indicateurs retenus permettent de créer une analyse globale s'appuyant sur l'accès d'une part (information, interfaces numériques) et sur les compétences d'autre part (utilisation d'une interface,compétences administratives).</p>
         <div class="quatre-indicators">
             <div class="un-indicator">
                 <img src="./medias/acces-info.png" class="conteneur-image">
-                <h3 style="text-align:center;">Access to information</h3>
+                <h3 style="text-align:center;">Accès à l'information</h3>
             </div>
             <div class="un-indicator">
                 <img src="./medias/interfaces.png" class="conteneur-image">
-                <h3 style="text-align:center;">Access to digital interfaces</h3>
+                <h3 style="text-align:center;">Accès aux interfaces numériques</h3>
             </div>
             <div class="un-indicator">
                 <img src="./medias/usage.png" class="conteneur-image">
-                <h3 style="text-align:center;">Ability to use digital interfaces</h3>
+                <h3 style="text-align:center;">Capacité d'usage des interfaces numériques</h3>
             </div>
             <div class="un-indicator">
                 <img src="./medias/administrative.png" class="conteneur-image">
-                <h3 style="text-align:center;">Administrative skills</h3>
+                <h3 style="text-align:center;">Compétences administratives</h3>
             </div>
         </div>
     </div>
@@ -362,11 +377,12 @@
         <img src="medias/logo3.jpg" alt="logo3" id="logo3"/>
 
     </div>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 <p class="footer">
-    Developed by: Greenades, Erasmus Mundus GENIAL Program
+    Outil développé par : Greenades -  <a href="http://genial.univ-lorraine.fr/" target="_blank">Programme Erasmus Mundus GENIAL</a> Cohorte 1
     <br>
-    Prohibition of reproduction - Free and open access tool - reserved for non-commercial use 
+    Interdiction de reproduction - Outil en accès libre et gratuit - réservé à un usage non-commercial 
     <br>
     © 2020 - Greenades
 </p>
