@@ -132,15 +132,25 @@ a.button.non-active {background:#4b6eb8;}
     color:#fff;
     font: bold 13px Arial, sans-serif;
 }
-.previous{
-    background-color: #f1f1f1;
-    color: #000;
+.share:hover, .previous:hover, .next:hover, .download:hover{
+    opacity: 0.9;
 }
 .share > img{
     height: 12px;
 }
 .download > img{
     height: 12px;
+}
+.row_number{
+    background-color:  #fff;
+    padding: 8px 16px;
+    border: none;
+    height: 22px;
+    display: inline-block;
+    color:#000;
+    font: normal 13px Arial, sans-serif;
+    width: 40px;
+    text-align: center;
 }
 /*Share form*/
 .form-container{
@@ -208,12 +218,12 @@ a.button.non-active {background:#4b6eb8;}
   margin-right: auto;
   width: 50%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 790px) {
     div.conteneur {width:45%;}
     .quatre-indicators {display:flex;justify-content: space-between;padding:2% 0;}
     .un-indicator {width:25%;}
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 790px) {
     div.conteneur, #conteneur-haut {
         width:80%;
     }
