@@ -15,7 +15,7 @@ var specialElementHandlers = {
 };
 
 function exportPDF() {
-    var doc = new jsPDF('p', 'pt', 'a4');
+    var doc = new jsPDF('l', 'pt',[1000,1500]);
     var source = document.getElementById('table-content').innerHTML;
     var margins = {
         top: 10,
@@ -31,7 +31,6 @@ function exportPDF() {
         'width': margins.width,
         'elementHandlers': specialElementHandlers
     },
-
     function(dispose) {
         doc.save('Data.pdf');
     }, margins);
