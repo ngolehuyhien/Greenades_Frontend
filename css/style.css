@@ -159,3 +159,60 @@ a.button.non-active {background:#4b6eb8;}
 .download > img{
     height: 12px;
 }
+
+/*Container four indicators*/
+.conteneur{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#indicator {
+    width:95%;
+    margin:80px auto 0 auto;
+}
+
+.un-indicator {
+    background:#0d3280;
+    padding:20px;
+    padding-top: 50px;
+    margin:4px;
+    box-sizing:border-box;
+}
+.un-indicator p, .un-indicator h3 {color:#fff;}
+.un-indicator img {
+    width:70px;
+}
+.conteneur h2, .conteneur p, .un-indicator h3 .footer{
+    vertical-align: inherit;
+}
+
+/*image*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+    div.conteneur {width:45%;}
+    .quatre-indicators {display:flex;justify-content: space-between;padding:2% 0;}
+    .un-indicator {width:25%;}
+}
+
+@media only screen and (max-width: 767px) {
+    div.conteneur, #conteneur-haut {
+        width:80%;
+    }
+    .quatre-indicators {padding:2% 0;}]
+}
+.brands img{
+    margin-right: 40px;
+}
+#logo3{
+    margin-right: 0;
+}
+/*footer*/
+.footer {font-size:13px;margin:80px auto 0 auto;text-align:center;color:#fff;background:#0d3280;padding:1%;}
+.footer a {color:#fff;}
