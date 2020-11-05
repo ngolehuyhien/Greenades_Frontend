@@ -44,6 +44,9 @@ a.classique {
 .header a.button {padding:0.5em 0.5em;margin-top:0;}
 a.button.non-active {background:#4b6eb8;}
 .header span, .header a.classique {color:#0d3280}
+.button-send:hover{
+    opacity: 0.9;
+}
 
 /* filters */ 
 .filters {
