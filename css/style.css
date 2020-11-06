@@ -92,11 +92,11 @@ a.button.non-active {background:#4b6eb8;}
     margin-left: 2.5%;
 }
 .scroller {
-    margin-left: 422px;
+    margin-left: 472px;
     overflow-x: scroll;
     overflow-y: visible;
     padding-bottom: 5px;
-    width: 69%;
+    width: 65%;
 }
 .table .sticky-col-1 .sticky-col-2 .sticky-col-3 .sticky-col-4{
     border-left: solid 1px #DDEFEF; 
@@ -105,17 +105,20 @@ a.button.non-active {background:#4b6eb8;}
 .table .sticky-col-1 {
     left: 0px;
     position: absolute;
-    width: 100px;
+    width: 150px;
 }
 .sticky-col-2 {
-    left: 101px;
+    left: 151px;
     position: absolute;
     width: 150px;
 }
 .sticky-col-3 {
-    left: 252px;
+    left: 302px;
     position: absolute;
     width: 150px;
+}
+.row-fixed-height{
+    height: 14px;
 }
 /* navigator */ 
 .navigator{

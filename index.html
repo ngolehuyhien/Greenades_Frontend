@@ -23,6 +23,7 @@
             <a class="button button-wayra button-border-thick button-text-upper button-size-s" href="https://linkedin.com/company/institutnr" target="_blank">In</a>
         </div>
     </div>
+    <h2>Cartographie De Fragilité</h2>
     <form action="/action_page.php" class="filters">
         <label for="regions" class="category">Region </label>
         <select name="region" id="regions">
@@ -152,9 +153,9 @@
                 <table class="table" id="main-table">
                     <thead>
                         <tr>
-                            <th class="sticky-col-1">Nom Com</th>
-                            <th class="sticky-col-2">Code Iris</th>
-                            <th class="sticky-col-3">Nom Iris</th>
+                            <th class="sticky-col-1 row-fixed-height">Nom Com</th>
+                            <th class="sticky-col-2 row-fixed-height">Code Iris</th>
+                            <th class="sticky-col-3 row-fixed-height">Nom Iris</th>
                             <th>Population</th>
                             <th>SCORE GLOBAL</th>
                             <th>ACCÈS AUX INTERFACES NUMERIQUES</th>
@@ -165,7 +166,7 @@
                             <th>GLOBAL COMPETENCES</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="rows-display">
                         <tr>
                         </tr>
                     </tbody>
@@ -175,9 +176,9 @@
     </div>
 
     <div class="navigator">
-        <button type="button" onclick="test()" class="previous">&laquo; Précédent</button>
-        <input type="text" value="01 - 10" readonly class="row_number">
-        <button type="button" onclick="" class="next">Suivant &raquo;</button>
+        <button type="button" onclick="previousRows()" class="previous">&laquo; Précédent</button>
+        <input type="text" value="01 - 10" readonly class="row_number" id="row-index">
+        <button type="button" onclick="nextRows()" class="next">Suivant &raquo;</button>
         <button type="button" onclick="openShare()" class="share">
             <img src="medias/share.png" alt="share" />
         </button>
